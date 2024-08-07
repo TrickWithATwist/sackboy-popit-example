@@ -1,6 +1,68 @@
 .flexbox
 {
+    background-color: black; /*place holder bg color */ 
     display: flex;
     flex-wrap: wrap;
 }
 
+.sack1
+{
+    background-image: url('./assets/smileidle.png');
+    
+    width: 200px; /* Specify the width */
+    height: 280px; /* Specify the height */
+    transform: scale(1);
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;
+}
+
+.sack1:hover
+{
+    background-image: url('./assets/smilehover.png');   
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.cursor
+{
+    background-image: url('./assets/cursoridle.png');
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;
+}
+
+.cursor:hover
+{
+    background-image: url('./assets/cursor.gif');
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale-up
+{
+    from
+    {
+        transform: scale(1);
+    }
+
+    to
+    {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes scale-down {
+
+    from
+    {
+        transform: scale(1.2);
+    }
+
+    to
+    {
+        transform: scale(1);
+    }
+    
+}
