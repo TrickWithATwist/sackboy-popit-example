@@ -115,6 +115,28 @@
     animation-fill-mode: forwards;
 }
 
+/*tooltip*/
+.tooltip
+{
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.sack1:hover .tooltip
+{
+    visibility: visible;
+}
+
+
 @keyframes scale-up
 {
     from
