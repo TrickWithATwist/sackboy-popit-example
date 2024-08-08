@@ -18,11 +18,17 @@ export default function Sack()
                 <div className='cursor'>
                     <span className='tooltip'>Popit Cursor</span>
                 </div>
-                <div className='stickers'></div>
+                <div className='stickers'>
+                    <span className='tooltip'>Stickers & Decorations</span>
+                </div>
             </div>
             <div className='layer3'>
-                <div className='text'></div>
-                <div className='retry'></div>
+                <div className='text'>
+                    <span className='tooltip'>Text Chat</span>
+                </div>
+                <div className='retry'>
+                    <span className='tooltip'>Retry</span>
+                </div>
             </div>
         </div>
     )

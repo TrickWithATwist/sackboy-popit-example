@@ -30,11 +30,12 @@
 
 .sack1
 {
+    padding-top: 20px;
     margin-bottom: 30;
-    background-image: url('./assets/smileidle.png');
-    
-    width: 200px; /* Specify the width */
-    height: 280px; /* Specify the height */
+    background-image: url('./assets/costume.png');
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
     transform: scale(1);
     animation: scale-down 0.5s;
     animation-fill-mode: none;
@@ -43,7 +44,7 @@
 
 .sack1:hover
 {
-    background-image: url('./assets/smilehover.png');   
+    background-image: url('./assets/Costume.gif');   
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
@@ -67,7 +68,7 @@
 
 .text
 {
-    background-image: url('./assets/Tool_Text_Chat.png');
+    background-image: url('./assets/speech.png');
     width: 256px;
     height: 256px;
     background-size: 256px 256px;
@@ -77,6 +78,7 @@
 
 .text:hover
 {
+    background-image: url('./assets/Speech.gif');
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
@@ -100,7 +102,7 @@
 
 .stickers
 {
-   background-image: url('./assets/Stickers_n_Decorations.png'); 
+   background-image: url('./assets/sticker.png'); 
    width: 256px;
    height: 256px;
    background-size: 256px 256px;
@@ -110,7 +112,7 @@
 
 .stickers:hover
 {
-    background-image: url('./assets/Stickers_n_Decorations_Animated.webp');
+    background-image: url('./assets/Stickers.gif');
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
@@ -125,6 +127,8 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
+    font-family: popitfont;
+    font-weight: 500;
 
     /* Position the tooltip */
     position: absolute;
@@ -145,6 +149,26 @@
     animation-fill-mode: forwards;
 }
 
+.stickers:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.text:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.retry:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
 
 @keyframes scale-up
 {
@@ -184,4 +208,9 @@
     {
         transform: scale(0.9);
     }
+}
+
+@font-face {
+    font-family: popitfont;
+    src: url('./assets/Eigerdals\ Heavy.OTF');
 }
