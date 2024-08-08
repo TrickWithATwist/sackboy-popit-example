@@ -21,6 +21,12 @@
     justify-content: center;
 }
 
+.layer3
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .sack1
 {
@@ -55,6 +61,39 @@
 .cursor:hover
 {
     background-image: url('./assets/cursor.gif');
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.text
+{
+    background-image: url('./assets/Tool_Text_Chat.png');
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;
+}
+
+.text:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.retry
+{
+    background-image: url('./assets/Sdf_anim_retry-1.png');
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;
+}
+
+.retry:hover
+{
+    background-image: url('./assets/Sdf_anim_retry.webp');
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }

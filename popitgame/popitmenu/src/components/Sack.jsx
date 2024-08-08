@@ -16,6 +16,10 @@ export default function Sack()
                 <div className='cursor'></div>
                 <div className='stickers'></div>
             </div>
+            <div className='layer3'>
+                <div className='text'></div>
+                <div className='retry'></div>
+            </div>
         </div>
     )
 }
