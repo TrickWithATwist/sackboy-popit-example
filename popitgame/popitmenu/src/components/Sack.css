@@ -134,6 +134,15 @@
 .sack1:hover .tooltip
 {
     visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.cursor:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -162,4 +171,17 @@
         transform: scale(1);
     }
     
+}
+
+@keyframes tipscale 
+{
+    from
+    {
+        transform: scale(0.2);
+    }
+
+    to 
+    {
+        transform: scale(0.9);
+    }
 }
