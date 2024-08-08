@@ -9,10 +9,13 @@ export default function Sack()
 {
     return(
         <div className='flexbox'>
-            <div className='sack1'></div>
-            <div className='cursor'></div>
-            <img classname='sack3'src={image1} alt="" />
-            <img classname='sack4'src={image1} alt="" />
+            <div className='layer1'>
+                <div className='sack1'></div>
+            </div>
+            <div className='layer2'>
+                <div className='cursor'></div>
+                <div className='stickers'></div>
+            </div>
         </div>
     )
 }

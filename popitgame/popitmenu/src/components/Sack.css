@@ -3,10 +3,28 @@
     background-color: black; /*place holder bg color */ 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.layer1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.layer2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .sack1
 {
+    margin-bottom: 30;
     background-image: url('./assets/smileidle.png');
     
     width: 200px; /* Specify the width */
@@ -14,6 +32,7 @@
     transform: scale(1);
     animation: scale-down 0.5s;
     animation-fill-mode: none;
+    flex-direction: column;
 }
 
 .sack1:hover
@@ -36,6 +55,23 @@
 .cursor:hover
 {
     background-image: url('./assets/cursor.gif');
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.stickers
+{
+   background-image: url('./assets/Stickers_n_Decorations.png'); 
+   width: 256px;
+   height: 256px;
+   background-size: 256px 256px;
+   animation: scale-down 0.5s;
+   animation-fill-mode: none;
+}
+
+.stickers:hover
+{
+    background-image: url('./assets/Stickers_n_Decorations_Animated.webp');
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
