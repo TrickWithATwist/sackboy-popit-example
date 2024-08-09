@@ -10,9 +10,15 @@ export default function Sack()
     return(
         <div className='flexbox'>
             <div className='layer1'>
-                <div className='sack1'>
+                <div type='button' className='sack1'>
                     <span className='tooltip'>Costume</span>
                 </div>
+
+                {/*Adding Modal for the Costume/Background color section*/}
+                <div>
+
+                </div>
+
             </div>
             <div className='layer2'>
                 <div className='cursor'>

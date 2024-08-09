@@ -47,6 +47,7 @@
     background-image: url('./assets/Costume.gif');   
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
 .cursor
