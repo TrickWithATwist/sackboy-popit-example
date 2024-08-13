@@ -282,6 +282,10 @@
     justify-content: left;
   }
  
+  .modallayer2:hover
+  {
+    cursor: pointer;
+  }
   
 .spacer1
 {
@@ -300,6 +304,7 @@
 
 .coolisland:hover
 {
+    cursor: pointer;
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
@@ -323,6 +328,7 @@
 
 .icecream:hover
 {
+    cursor: pointer;
     animation: scale-up 0.5s;
     animation-fill-mode: forwards;
 }
