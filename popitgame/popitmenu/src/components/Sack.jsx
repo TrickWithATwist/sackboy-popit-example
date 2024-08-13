@@ -36,7 +36,29 @@ export default function Sack()
 
             <Modal open={open} onClose={() => setopen(false)}>
                 <div className='modalflexbox'>
-                    <h1>This is a modal</h1>
+                    <div className='modallayer1'>
+                        <div className='spacer1'>
+                            <spacer ></spacer>
+                        </div>
+                        <div className='coolisland'>
+                            <span className='tooltip'>Cool Island</span>
+                        </div>
+                        <div className='icecream'>
+                            <span className='tooltip'>Ice Cream Sprinkles</span>
+                        </div>
+                    </div>
+                    <div className='modallayer2'>
+                        <div className='candyjar'>
+                            <span className='tooltip'>Candy Jar</span>
+                        </div>
+                        <div className='forestsurprise'>
+                            <span className='tooltip'>Forest Surprise</span>
+                        </div>
+                        <div className='slicedbread'>
+                            <span className='tooltip'>Sliced Bread</span>
+                        </div>
+                    </div>
+                    <h1>Player Color</h1>
                 </div>
             </Modal>
         </div>

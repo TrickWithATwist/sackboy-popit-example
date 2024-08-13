@@ -229,6 +229,11 @@
     src: url('./assets/Eigerdals\ Heavy.OTF');
 }
 
+@font-face {
+    font-family: costumefont;
+    src: url('./assets/Aracne\ Condensed\ Regular.ttf');
+}
+
 
 .modal-backdrop {
     animation: fade-in 0.2s;
@@ -246,11 +251,154 @@
   }
   
   .modal-content {
-    font-family: popitfont;
+    font-family: costumefont;
+    font-size: larger;
     animation: tipscale 0.2s;
     animation-fill-mode: forwards;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
     z-index: 1001;
   }
+
+  .modalflexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .modallayer1
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+
+  .modallayer2
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+ 
+  
+.spacer1
+{
+    margin-right: 150px;
+}
+/*bg themes*/
+.coolisland
+{
+    background-image: url('./assets/pc/pc1.png');
+    width: 150px;
+    height: 230px;
+    background-size: 150px 230px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;    
+}
+
+.coolisland:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.coolisland:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.icecream
+{
+    background-image: url('./assets/pc/pc2.png');
+    width: 150px;
+    height: 230px;
+    background-size: 150px 230px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;    
+}
+
+.icecream:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.icecream:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.candyjar
+{
+    background-image: url('./assets/pc/pc3.png');
+    width: 150px;
+    height: 230px;
+    background-size: 150px 230px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;    
+}
+
+.candyjar:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.candyjar:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.forestsurprise
+{
+    background-image: url('./assets/pc/pc4.png');
+    width: 150px;
+    height: 230px;
+    background-size: 150px 230px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;    
+}
+
+.forestsurprise:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.forestsurprise:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.slicedbread
+{
+    background-image: url('./assets/pc/pc5.png');
+    width: 150px;
+    height: 230px;
+    background-size: 150px 230px;
+    animation: scale-down 0.5s;
+    animation-fill-mode: none;    
+}
+
+.slicedbread:hover
+{
+    animation: scale-up 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slicedbread:hover .tooltip
+{
+    visibility: visible;
+    animation: tipscale 0.2s;
+    animation-fill-mode: forwards;
+}
