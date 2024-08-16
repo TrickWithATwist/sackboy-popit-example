@@ -408,3 +408,8 @@
     animation: tipscale 0.2s;
     animation-fill-mode: forwards;
 }
+
+.theme-option-selected {
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

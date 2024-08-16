@@ -70,21 +70,21 @@ export default function Sack()
                         <div className='spacer1'>
                             <spacer ></spacer>
                         </div>
-                        <div className='coolisland'>
+                        <div className={`coolisland ${current_theme === 'coolIsland' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('coolIsland')}>
                             <span className='tooltip'>Cool Island</span>
                         </div>
-                        <div className='icecream'>
+                        <div className={`icecream ${current_theme === 'iceCream' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('iceCream')}>
                             <span className='tooltip'>Ice Cream Sprinkles</span>
                         </div>
                     </div>
                     <div className='modallayer2'>
-                        <div className='candyjar'>
+                        <div className={`candyjar ${current_theme === 'candyJar' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('candyJar')}>
                             <span className='tooltip'>Candy Jar</span>
                         </div>
-                        <div className='forestsurprise'>
+                        <div className={`forestsurprise ${current_theme === 'forestSurprise' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('forestSurprise')}>
                             <span className='tooltip'>Forest Surprise</span>
                         </div>
-                        <div className='slicedbread'>
+                        <div className={`slicedbread ${current_theme === 'slicedBread' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('slicedBread')}>
                             <span className='tooltip'>Sliced Bread</span>
                         </div>
                     </div>
