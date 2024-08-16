@@ -31,9 +31,15 @@ export default function Sack()
 
     useEffect(() => {
         const theme = themes[current_theme];
-        document.documentElement.style.setProperty('--background-color', theme.background);
+        if (theme.background.startsWith('linear-gradient')) {
+            document.documentElement.style.setProperty('--background-color', theme.background);
+            document.body.style.background = theme.background;
+        } else {
+            document.documentElement.style.setProperty('--background-color', theme.background);
+            document.body.style.background = theme.background;
+        }
         document.documentElement.style.setProperty('--tooltip-bg', theme.tooltip);
-        document.documentElement.style.setProperty('--tooltip-color', theme.background);
+        document.documentElement.style.setProperty('--tooltip-color', 'white'); // For better contrast
     }, [current_theme]);
 
 
@@ -70,21 +76,21 @@ export default function Sack()
                         <div className='spacer1'>
                             <spacer ></spacer>
                         </div>
-                        <div className={`coolisland ${current_theme === 'coolIsland' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('coolIsland')}>
+                        <div className={`coolisland ${current_theme === 'coolisland' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('coolisland')}>
                             <span className='tooltip'>Cool Island</span>
                         </div>
-                        <div className={`icecream ${current_theme === 'iceCream' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('iceCream')}>
+                        <div className={`icecream ${current_theme === 'icecream' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('icecream')}>
                             <span className='tooltip'>Ice Cream Sprinkles</span>
                         </div>
                     </div>
                     <div className='modallayer2'>
-                        <div className={`candyjar ${current_theme === 'candyJar' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('candyJar')}>
+                        <div className={`candyjar ${current_theme === 'candyjar' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('candyjar')}>
                             <span className='tooltip'>Candy Jar</span>
                         </div>
-                        <div className={`forestsurprise ${current_theme === 'forestSurprise' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('forestSurprise')}>
+                        <div className={`forestsurprise ${current_theme === 'forestsurprise' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('forestsurprise')}>
                             <span className='tooltip'>Forest Surprise</span>
                         </div>
-                        <div className={`slicedbread ${current_theme === 'slicedBread' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('slicedBread')}>
+                        <div className={`slicedbread ${current_theme === 'slicedbread' ? 'theme-option-selected' : ''}`} onClick={() => handleThemeChange('slicedbread')}>
                             <span className='tooltip'>Sliced Bread</span>
                         </div>
                     </div>
